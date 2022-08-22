@@ -1,0 +1,316 @@
+/*  
+Theme Name: Zirtaeb
+Theme URI: http://www.basesoft.com.br
+Author: Base Software
+Author URI: http://www.basesoft.com.br
+*/
+
+/* GLOBAL SETTINGS
+====================================================================================================== */
+body{ text-align:center; background: #fff; position:relative;}
+.bg_head{ background: url(imagens/bg_head.jpg) no-repeat; background-position: center -47px;}
+.bg_middle{ background: url(imagens/bg_middle.jpg) repeat;}
+.bg_foot{ background: url(imagens/bg_foot.jpg) bottom center no-repeat;}
+#layout{ width:1000px; text-align:left; margin:0 auto; position: relative;}
+
+/* Ajustes para HOME*/
+.home .bg_head{ background-position: top center;}
+
+body, table, tr, td, th{ font:13px Verdana, Geneva, sans-serif; color:#3b3b3b;}
+#layout body, table body, tr body, td body, th body{}
+a, a:link, a:visited{ color:#ac050b; text-decoration:none;}
+a:hover, a:active{}
+
+strong, b, .negrito{ font-weight:bold;}
+em, i, .italico {font-style:italic;}
+u, .sublinhado{ text-decoration:underline;}
+s, .riscado{text-decoration:line-through;}
+#meio p{margin:10px 0; padding: 0 5px;}
+
+.imgleft {float:left; margin-right:5px;}
+.imgright {float:right; margin-left:5px;}
+
+.alignleft, .esquerda {text-align:left}
+.alignright, .direita {text-align:right}
+.alignjustfy, .justificado {text-align:justify}
+.aligncenter, .center, .centralizado {text-align:center}
+.vcenter{vertical-align:middle;}
+
+img.centered {display: block; margin-left: auto; margin-right: auto; }
+img.alignright { float: right; margin:0 0 0 5px;}
+img.alignleft {float: left; margin:0 5px 0 0;}
+
+.fleft{float:left;}
+.fright{float:right;}
+.clear{clear:both;}
+.none, .hidden{display:none;}
+.block{display:block;}
+.inline{display:inline;}
+
+blockquote{}
+.cor1{}
+.cor2{}
+.cor3{}
+
+
+/* HEADER (cabecalho)
+====================================================================================================== */
+#header{ position: relative;}
+#header h1{ float:left; margin-top: 43px; margin-left: 23px;}
+#header h1 a{ display: inline-block; background: url(imagens/logo.png) no-repeat; width:441px; height:112px; position: relative; z-index:1999;}
+#header h1 span{ display: none;}
+
+#menu_funcional{ width:456px; height: 44px; text-align: center; margin-top: 17px; float:left; clear:left; margin-left: 5px; position: relative; z-index:1999;}
+#menu_funcional li{ display: inline;}
+#menu_funcional a{ display: inline-block; background: url(imagens/menu_funcional.png) no-repeat; height: 44px;}
+#menu_funcional span{display:none;}
+
+#menu_funcional .hom{}
+#menu_funcional .hom a{ width: 78px; background-position: 0 0;}
+#menu_funcional .hom a:hover{ background-position: 0 -44px;}
+#menu_funcional .servicos{}
+#menu_funcional .servicos a{ width: 78px; background-position: -87px 0;}
+#menu_funcional .servicos a:hover{ background-position: -87px -44px;}
+#menu_funcional .aempresa{}
+#menu_funcional .aempresa a{ width: 90px; background-position: -174px 0;}
+#menu_funcional .aempresa a:hover{ background-position: -174px -44px;}
+#menu_funcional .consultas{}
+#menu_funcional .consultas a{ width: 78px; background-position: -272px 0;}
+#menu_funcional .consultas a:hover{ background-position: -272px -44px;}
+#menu_funcional .faleconosco{}
+#menu_funcional .faleconosco a{ width: 97px; background-position: -359px 0;}
+#menu_funcional .faleconosco a:hover{ background-position: -359px -44px;}
+
+#telefone{ width: 221px; height: 53px; background: url(imagens/telefone.png) no-repeat; clear:left; margin-left: 230px; position: relative; z-index:1999;}
+.page-id-46 #telefone{ height:60px;}
+.page-id-44 #telefone{ height:60px;}
+#telefone span{ display:none;}
+
+#slide{position: absolute; top: -15px; left: 460px; width: 530px; height:299px;}
+#slide_mascara{ position:absolute; top:0; left:0; background:url(imagens/foto_mascara.png) no-repeat; width:89px; height:299px; z-index:999;}
+#slide_imagens{ position:absolute; top:0; left: 20px; width:530px; height:282px;}
+/* controles */
+#nav{ position: absolute; top: 250px; right: -20px; z-index: 99999;  font-size: 13px;} 
+#nav a{ background: url(imagens/foto_slide_nav-bg.png) 0 0 no-repeat; display:inline-block; width:27px; height:24px; margin:0 2px; padding: 3px 0 0 0; color:#fff; text-align: center; text-decoration:none;}
+#nav a.activeSlide{ font-weight:bold;}
+
+
+/* Ajustes para HOME*/
+.home #header{ height: 450px;}
+.home #header h1{ margin-top: 63px;}
+.home #menu_funcional{margin-bottom:20px;}
+#buscaLivre{ clear:both; background: url(imagens/buscalivre.png) 0 0 no-repeat; width:451px; height:90px; position:relative;}
+#buscaLivre form{width:451px; height:90px;}
+#buscaLivre .cmp{ position: absolute; top: 31px; left: 10px; border: 0; background: transparent; height: 40px; width: 385px; font-size: 18px; color: #666;}
+#buscaLivre .cmp.vazio{ color:#ccc; font-style:italic;}
+#buscaLivre .submit{ position: absolute; top: 30px; right: 5px; border: 0; background: transparent; width: 43px; height: 45px; cursor:pointer;}
+.home #slide{top:112px;}
+.page-id-46 #slide{top:69px;}
+.page-id-44 #slide{top:69px;}
+.home #slide_mascara{ background:url(imagens/foto_mascara_home.png) no-repeat;}
+.page-id-46 #slide_mascara{ background:url(imagens/foto_mascara_home.png) no-repeat;}
+.page-id-44 #slide_mascara{ background:url(imagens/foto_mascara_home.png) no-repeat;}
+.home #telefone{position:absolute; top:0; right:5px; margin:0;}
+#loginform{ background:url(imagens/login.png) no-repeat; width:376px; height:71px; position:absolute; top:20px; right:20px;}
+#loginform #login{margin-top: 51px; border: 0; background: transparent; height: 17px; margin-left: 67px; width: 90px; margin-right: 56px;} 
+#loginform #senha{ border: 0; background: transparent; height: 17px; width: 90px; }
+#loginform .fpw{position: absolute; top: 73px; font-size: 11px; right: 70px;}
+#loginform .fpw a{ color:#333; text-decoration:none;}
+#loginform .ok{position: absolute; top: 49px; right: 0; border: 0; background: transparent; width: 50px; cursor: pointer;}
+#busca_rapida{width:950px; height:82px; background:url(imagens/buscarapida.png) no-repeat; position: relative; z-index: 9999; margin-top: 15px;}
+#buscarapida div.idiomas{position: absolute; top: 30px; left: 10px;}
+#buscarapida div{ position:absolute;  padding-top: 3px; top: 52px;}
+#buscarapida div select {border:0 none; background-color:transparent; height: 21px;}
+#buscarapida .finalidade{ left: 1px;}
+#buscarapida .finalidade select {width: 158px;}
+#buscarapida .municipio{left: 169px;}
+#buscarapida .municipio select { width: 159px;}
+#buscarapida .bairro{left: 342px; }
+#buscarapida .bairro select {width: 157px;}
+#buscarapida .tipo{left: 511px; }
+#buscarapida .tipo select {width: 159px;}
+#buscarapida .dorm1 {position: absolute;  left: 689px; width: 87px !important;}
+#buscarapida .dorm2 {position: absolute;  left: 790px; width: 87px !important;}
+#buscarapida .enviar{position: absolute; border: 0 none; left: 898px; width: 59px; height: 20px; cursor:pointer;}
+#buscarapida .enviar.PT-BR{ background: url(imagens/br_submit_pt.png) no-repeat;}
+#buscarapida .enviar.EN-US{ background: url(imagens/br_submit_ing.png) no-repeat;}
+#buscarapida .enviar.ESP{ background: url(imagens/br_submit_esp.png) no-repeat;}
+#buscarapida .SuperSelect, #buscarapida .SuperSelect div{top:0;}
+#busca_rapida #buscarapida .multiSelect { width: 133px; margin: 2px 0 0; border:0 none !important; }
+#busca_rapida #buscarapida .superbox input { width: 132px; height: 19px; }
+#busca_rapida  #buscarapida .SuperSelect .flutuante {width: 213px; margin-top: 26px;}
+
+
+/* MIDDLE (meio)
+====================================================================================================== */
+#middle{margin-top: 20px;}
+
+/* SIDEBAR
+====================================================================================================== */
+#sidebar{ width:210px; float:right;}
+
+.not_home #quadrados a{display:block; margin: 10px 0;}
+
+/* CORPO
+====================================================================================================== */
+#meio{ width:750px; float:left;}
+
+/* HOME
+====================================================================================================== */
+#quadrados{text-align: center; margin: 15px 0 25px;}
+#destk_news_bnr{ margin-bottom:25px;}
+
+/* Destaques - Venda e Locacao */
+#destaques{ float:left; width:475px; margin-right: 6px; position:relative;}
+#abas{padding:0; margin:0; list-style:none; position:relative; z-index:1; bottom: -11px; left:11px;}
+#abas li{display:inline; margin-left: -6px;}
+.venda a, .aluguel a{ display:inline-block; width:212px; height:45px; background:url(imagens/destaque_abas.png) 0 0 no-repeat;}
+.venda a{ background-position:0 -45px;}
+.aluguel a{ background-position:-211px -45px;}
+.venda .selecionado{ background-position:0 0;}
+.aluguel .selecionado{ background-position: -211px 0;}
+.venda a span, .aluguel a span{ display:none;}
+.contaba{ width:471px; height:231px; background:url(imagens/destaque_fundo.png) no-repeat;  position:relative; z-index:2;}
+.slider div{ position: relative; z-index:50; width:431px; height:214px; background:transparent !important;}
+.contaba span{display:block; margin: 5px 0; float:none;}
+.dtkimg{ border:3px solid #fff; background:#fff; position:absolute; top: 20px; left: 20px;}
+.dets{ position: absolute; top: 55px; left: 225px; text-align: center; width: 210px; color:#575757;}
+.dets a{color:#575757;}
+.bairro, .bairro a{font-size:18px; font-weight:bold;}
+.valor, .valor a{font-size:18px;}
+.endereco, .endereco a{font-size:13px;}
+#nav{}
+#nextBtnalu, #nextBtnve{ display:inline-block; background:url(imagens/seta.png) no-repeat; width:17px; height:26px; position: absolute; top: 100px; right: 10px;}
+
+/* Noticias */
+#noticias{ float:left; width:320px; margin-right: 6px;}
+#noticias h3{background:url(imagens/title_news.png) no-repeat; width:293px; height:71px; margin: 0 auto 15px;}
+#noticias h3 span{display:none;}
+#noticias ul{width: 310px; margin: 0 auto;}
+#noticias li{ background:url(imagens/seta_mini.png) 8px 10px no-repeat; padding:7px 10px 8px 20px;}
+#noticias li.odd{ background-color:#f8f8f8;}
+#noticias li.even{ background-color:#efefef;}
+#noticias a{ color:#444444;}
+#noticias a:hover{ text-decoration:underline;}
+.mais_news{text-align: right; font-size: 11px; margin-top: 5px; padding-right: 10px;}
+.mais_news a{text-decoration: none;}
+
+/* Banners */
+#banners{ float:left; width:185px; text-align:center;}
+/* trigger button */
+#proposta {
+	cursor:default;
+        height: 211px;
+        width: 179px;
+        display: block;
+}
+
+/* tooltip styling */
+.tooltip {
+	display:none;
+	background:url(imagens/tooltip.png);
+        height: 177px;
+        padding: 22px 36px 10px 23px;
+        width: 110px;
+        font-size: 12px;
+        color: #666;
+        text-align: left;
+        left:650px !important;
+        top:643px !important;
+}
+
+.tooltip a {
+	color:#666;
+        font-weight: bold;
+	font-size:12px;
+}
+
+
+/* PÃ?GINAS e POSTS
+====================================================================================================== */
+/* PÃ¡ginas */
+.cntt{margin-top:15px; line-height: 20px; text-align: justify;}
+.cntt h1{font-size: 2em; font-weight:bold; margin:10px 0;}
+.cntt h2{font-size: 1.5em; font-weight:bold; margin:10px 0;}
+.cntt h3{font-size: 1.17em; font-weight:bold; margin:10px 0;}
+.cntt h4{font-weight:bold; margin:5px 0;} 
+.cntt h5{font-size: .83em; font-weight:bold; margin:5px 0;}
+.cntt h6{font-size: .75em; font-weight:bold; margin:5px 0;}
+.cntt ul{ list-style:inside disc;}
+.cntt ol{ list-style:inside decimal;}
+.cntt li{margin:5px 0;}
+.error404 .cntt h2{font-size: 1.3em;}
+
+.type-page .title, .type-post .title{font-size:22px; color: #ED1B24; padding: 3px 5px;}
+
+.category .type-post .title{margin-top:30px;}
+
+.ft{}
+
+/* FORMULÃ?RIOS */
+.wpcf7 input{}
+.wpcf7 .txt{ border:1px solid #bebebe;}
+.wpcf7 .txt:focus{ border:1px solid #909090;}
+.wpcf7 input.txt{}
+.wpcf7 textarea.txt{}
+.wpcf7 .ok{ background: none repeat scroll 0 0 #ededed; border: 1px solid #afaeae; color: #515151; margin: 2px; padding: 5px; -webkit-border-radius:10px; -moz-border-radius: 10px;}
+.wpcf7-not-valid-tip{ text-align: left;}
+/* Fale Conosco */
+
+/* MAPA DO SITE */
+#mapasite{}
+#mapasite li{}
+#mapasite li a:hover, #mapasite li a:active {}
+
+/* CONSULTAS */
+#consultas{}
+.box{position:relative; background:#eceadb url(imagens/box_bg.jpg) bottom repeat-x;  width: 275px; margin: 10px;  padding: 13px 65px 13px 13px; float: left; border:1px solid #e3e4cf;
+	border-radius: 9px; /* CSS 3 */
+	-o-border-radius: 9px; /* Opera */
+	-icab-border-radius: 9px; /* iCab */
+	-khtml-border-radius: 9px; /* Konqueror */
+	-moz-border-radius: 9px; /* Firefox */
+	-webkit-border-radius: 9px; /* Safari */
+}
+.box .icon{position: absolute; right: 10px; top: 10px;}
+.box .h3{}
+.box .ul{}
+.box .li{}
+.box  a{color:#515151;}
+
+/* Editar/Voltar */
+.voltar{ font:bold 12px Tahoma, Verdana, Geneva, sans-serif; text-align:right; margin-top: 30px;}
+.voltar a{ margin: 2px; padding: 5px; text-decoration:none; background-color: #d6d4c6; border: 1px solid #c3c1b1; color: #58585a;}
+.voltar a:link, .voltar a:visited{}
+.voltar a:hover{ background-color: #c3c1b1;}
+.editar{ text-align: right;}
+
+
+/* FOOTER (rodape)
+====================================================================================================== */
+#footer{ height:200px; position:relative; margin-top:60px;}
+
+#filiais{ text-align:center;}
+#filiais ul{}
+#filiais li{ display:inline; margin: 0 15px;}
+#filiais a{ display:inline-block; width:182px; height:39px; background: url(imagens/filiais.png) no-repeat;}
+#filiais span{ display:none;}
+#filiais .centro{}
+#filiais .centro a{ background-position:0 0;}
+#filiais .centro a:hover{}
+#filiais .barra{}
+#filiais .barra a{ background-position:0 -39px;}
+#filiais .barra a:hover{}
+#filiais .recreio{}
+#filiais .recreio a{ background-position:0 -78px;}
+#filiais .recreio a:hover{}
+#filiais .copacabana{}
+#filiais .copacabana a{ background-position:0 -117px;}
+#filiais .copacabana a:hover{}
+#filiais .frase{ background: url(imagens/filiais_frase.png) 0 0 no-repeat; width:213px; height:18px; margin:10px auto 20px;}
+#facebox{bottom: 235px !important;}
+
+#logos_associados{ position:absolute; top: 100px; left:10px;}
+#midias_sociais{ position:absolute; top:107px; right:250px;}
+#prod_base{ position:absolute; top:100px; right:115px;}
+#copy{ position: absolute; bottom: 5px; left: 370px;font:11px Tahoma; color:#272727;}

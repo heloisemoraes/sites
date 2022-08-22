@@ -1,0 +1,142 @@
+body,html,p{font-family: 'Roboto Condensed', sans-serif!important;}
+a:focus{outline:none;}
+
+/*header*/
+.site-header{position:absolute;padding-top: 15px;box-shadow: none;}
+.site-header-container{max-width: 1380px !important;}
+
+/*txt*/
+h2.h2.after{color:#8f8f8f;text-transform:uppercase;font-size:35px;}
+h2.h2.after:after{content:"";display:block;width:50px;height:3px;background:#b1001c;margin:10px auto 0;}
+.ver-todas{color:#b1001c;font-size:13px;text-transform:uppercase;}
+.ver-todas:hover,.ver-todas:focus,.ver-todas:active{color:#b1001c;}
+
+/*menu*/
+.menu-wrapper{display: flex;align-items: center;} 
+.menu{display:inline-block;}
+.navbar-nav { margin: 0 0 0 20px;}
+.navbar-nav > li > a{font-family: 'Roboto Condensed', sans-serif;text-transform:uppercase;color: #fff;}
+.nav > li > a:focus, .nav > li > a:hover {background-color: transparent;}
+.menu {border-top: none; box-shadow: none;}
+.menu-toggle{background:url(../images/menu-hamburger.png) no-repeat center center transparent;width:45px;height:40px;text-indent:-9999px;display:none;border:1px solid #fff;}
+
+/*area restrita*/
+form.form_aera_restrita{background:transparent;}
+form.form_aera_restrita .glyphicon.glyphicon-user{display:none;}
+form.form_aera_restrita > p{font-weight:normal;color:#fff;}
+form.form_aera_restrita input{border-radius: 3px; border: none; padding: 1px; height: auto; margin-right: 5px;}
+form.form_aera_restrita input::-webkit-input-placeholder{font-size:12px;font-family:'Roboto Condensed',sans-serif;}
+form.form_aera_restrita input::-moz-placeholder{font-size:12px;font-family:'Roboto Condensed',sans-serif;}
+form.form_aera_restrita input:-ms-input-placeholder{font-size:12px;font-family:'Roboto Condensed',sans-serif;}
+form.form_aera_restrita input:-moz-placeholder{font-size:12px;font-family:'Roboto Condensed',sans-serif;}
+form.form_aera_restrita button{background: #b1001c; border-radius: 3px; height: auto; padding: 3px; width: 22px; font-size: 12px; font-family: 'Roboto Condensed',sans-serif; }
+form.form_aera_restrita a{color:#fff;}
+
+/*banner*/
+.banner{position: relative;}
+.banner-content{width:100%;}
+.banner-text{position:absolute;top:30%;text-align:center;width:100%;max-width:1100px;margin:0 auto;left: 0;right: 0;}
+.banner h2.h2{text-transform: uppercase;color:#fff;width: 100%;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.55);font-size:50px;}
+.banner p{text-transform: uppercase;color:#fff;font-size:32px;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.55);}
+.banner-text .servicos{margin-top:65px;}
+.banner-text .servicos a{display:block;color:#fff;font-size:28px;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.55);line-height: 32px;margin-top:20px;}
+.banner-content-img{display: none;}
+
+/*noticias*/
+.vc_grid-item-mini.vc_clearfix{position:relative;}
+.vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_excerpt{display:none;}
+.vc_gitem-zone.vc_gitem-zone-c.vc_custom_1419240516480{position: absolute;bottom: 0;background-color: transparent !important;}
+.vc_gitem-zone.vc_gitem-zone-c h4{font-size:26px;color:#fff;text-transform:uppercase;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.55);margin: 0;}
+.vc_btn3.vc_btn3-color-juicy-pink, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat {color: #fff; background-color: transparent; font-size: 13px; text-transform: uppercase; text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.55); padding: 0;}
+.vc_btn3-container.vc_btn3-left {margin-bottom: 5px;}
+
+@media only screen and (min-width: 910px) and (max-width: 1239px) {
+	/*menu*/
+	.menu-wrapper{display:block;}
+	.menu{display:block;}
+	.navbar-nav { margin: 0;}
+	.navbar-nav > li{display: inline-block;}
+
+	/*banner*/
+	.banner-content{width:130%;margin-left: -15%;}
+	.banner-text{top:30%;}
+}
+@media only screen and (min-width: 768px) and (max-width: 909px) {
+	/*menu*/
+	.logo_empresa_header{margin:0 0 10px;}
+	.menu-wrapper{display:block;}
+	.menu{display:block;} 
+	.navbar-nav { margin: 0;}
+	.navbar-nav > li{display: inline-block;}
+
+	/*banner*/
+	.banner-content{width:140%;margin-left: -20%;}
+	.banner-text{top:30%;}
+	.banner h2.h2{font-size: 30px;}
+	.banner p {font-size: 25px;}
+	.banner-text .servicos a {font-size: 25px;}
+	.banner-text .servicos .col-sm-3 img{width: 100px;}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/*menu*/
+	.site-header{padding-top: 25px;}
+	.menu-wrapper {display: block;}
+	.logo-promenade{float:left;}
+	.menu-toggle{display:inline-block;}
+	.site-header.toggled-on{background:#B1001C;}
+	.menu,.area-restrita-wrapper{display:none;}
+	.menu.toggled-on{display: block;width: 100%;float: none;}
+	.navbar-nav { margin: 0;}
+	.navbar-nav > li {float: left; padding-right: 0; text-align: left; width: 100%;font-size: 18px;border-bottom: 1px solid #fff;}
+	.navbar-nav > li > a {padding: 20px 0;}
+	.area-restrita-wrapper.toggled-on{display:block;}
+	.site-header-container::before,.site-header-container::after{display:none;}
+	/*area restrita*/
+	form.form_aera_restrita{padding: 20px 0 120px;margin: 0;display: block;text-align: left;}
+	form.form_aera_restrita > p{text-align: left;font-size: 18px;}
+	form.form_aera_restrita p, form.form_aera_restrita div, form.form_aera_restrita a{text-align:left;}
+	form.form_aera_restrita button {background: #8F8F8F;}
+
+	/*banner*/
+	.banner-text { top: 25%;}
+	.banner-content{display:none;}
+	.banner-content-img{display:block;}
+	.banner-content-img img{margin-left: -100%;}
+	.banner h2.h2{font-size: 27px;}
+	.banner p {display:none;}
+	.banner-text .servicos .col-sm-3{width:50%;float:left;margin-bottom: 30px;}
+	.banner-text .servicos .col-sm-3 img{width: 100px;}
+	.banner-text .servicos a {margin-top:10px;font-size: 17px;}
+}
+@media only screen and (min-width: 1px) and (max-width: 479px) {
+	/*menu*/
+	.site-header{padding-top: 25px;}
+	.menu-wrapper {display: block;}
+	.logo-promenade{float:left;width: 80%;}
+	.logo_empresa_header{margin:0;}
+	.menu-toggle{display:inline-block;}
+	.site-header.toggled-on{background:#B1001C;}
+	.menu,.area-restrita-wrapper{display:none;}
+	.menu.toggled-on{display: block;width: 100%;float: none;}
+	.navbar-nav { margin: 0;}
+	.navbar-nav > li {float: left; padding-right: 0; text-align: left; width: 100%;font-size: 18px;border-bottom: 1px solid #fff;}
+	.navbar-nav > li > a {padding: 20px 0;}
+	.area-restrita-wrapper.toggled-on{display:block;}
+	.site-header-container::before,.site-header-container::after{display:none;}
+	/*area restrita*/
+	form.form_aera_restrita{padding: 5px 0 10px;margin: 0;display: block;text-align: left;}
+	form.form_aera_restrita > p{text-align: left;font-size: 18px;}
+	form.form_aera_restrita p, form.form_aera_restrita div, form.form_aera_restrita a{text-align:left;}
+	form.form_aera_restrita button {background: #8F8F8F;}
+
+	/*banner*/
+	.banner-text { top: 13%;}
+	.banner-content{display:none;}
+	.banner-content-img{display:block;}
+	.banner-content-img img{margin-left: -180%;}
+	.banner h2.h2{font-size: 27px;}
+	.banner p {display:none;}
+	.banner-text .servicos .col-sm-3{width:50%;float:left;margin-bottom: 30px;min-height: 160px;}
+	.banner-text .servicos .col-sm-3 img{width: 100px;}
+	.banner-text .servicos a {margin-top:10px;font-size: 17px;line-height: 20px;}
+}

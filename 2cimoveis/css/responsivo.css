@@ -1,0 +1,218 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	1460px ou maior
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 1460px) {
+    .container{ width: 890px; margin:0 0 0 560px;}
+    .visualizacao, #nav-menu-lateral{width:510px; }
+    .container-2{ width:1180px; margin: 0 auto; }
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    De 1250px à 1459px
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 1250px) and (max-width: 1459px) {
+    .dotted-1{background-position: -300px 2px;}
+    .container{}
+    .visualizacao, #nav-menu-lateral{width:440px; }
+    .container-2{ width:1050px; margin: 0 auto; }
+
+
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    De 955px à 1249px
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 955px) and (max-width: 1249px) {
+    .dotted-1{background: none;}
+    .dotted-3{background-position: 900px 0;}
+    .container-2{ width:940px!important; margin: 0 auto; }
+	#busca_rapida{width: 93%!important;}
+	#destaque_container-widget .item {
+		width: 31%!important;
+		height: 510px!important;}
+		.navbar li{margin: 3px;}	
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    De 768px à 954px
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 768px) and (max-width: 954px) {
+
+	#destaque_container-widget .item {
+		width: 31%!important;
+		height: auto!important;
+	}
+	
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   
+ Até 768px
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+ @media (max-width: 768px) {
+	.inicio{padding: 20px;}
+	.inicio .area{text-align: center;}
+	.navbar{background: #d1d1d1!important;}
+	.navbar-toggle {
+		float: left!important;
+	}
+	.segundavia{margin: 0 auto;}
+
+	.elementor-column-gap-default>.elementor-column>.elementor-element-populated, .elementor-col-100{    padding: 0px!important; }
+	.elementor-7 .elementor-element.elementor-element-0b39ecc > .elementor-widget-container {padding: 0px 0px 109px 0px!important;}
+	.elementor-7 .elementor-element.elementor-element-616e533 > .elementor-widget-container {
+		padding: 200px 50px 0px 50px!important;
+	}
+	.elementor-7 .elementor-element.elementor-element-d1e86c1:not(.elementor-motion-effects-element-type-background), .elementor-7 .elementor-element.elementor-element-d1e86c1 > .elementor-motion-effects-container > .elementor-motion-effects-layer{padding: 50px;}
+	.elementor-7 .elementor-element.elementor-element-a43130a:not(.elementor-motion-effects-element-type-background), .elementor-7 .elementor-element.elementor-element-a43130a > .elementor-motion-effects-container > .elementor-motion-effects-layer{padding: 50px;}
+	.elementor-element .elementor-element-f001884 .elementor-widget .elementor-widget-wp-widget-destaques_widget{padding: 50px;}
+	#destaque_container-widget .foto img {
+		border: 0px!important;
+		width: 100%!important;
+		height: 225px!important;
+	}
+	#destaque_container-widget .item {width: 96%!important; height: auto!important;}
+	#destaque_container-widget .titulo{top: 174px!important; right: 97px!important;}
+
+
+	.home .post_body{padding: 0px;}
+	.post_body{padding: 30px;}
+	.part-sobre .texto{ text-align:center;}
+	.part-sobre .texto p{    text-align: center;    max-width: 670px;    float: none;}
+	
+	.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea{ opacity: 0.9;}
+	 .part-sobre .container-2 {    width: auto;}
+	 .part-sobre .imagem img {    float: none;    margin: 0 auto;}
+	 .post_footer .assinatura {  }
+	 .post_footer .assi{    width: 175px;    margin: 0 auto;}
+	 .part-contato{margin-top: 30px;}
+	 .menu{padding-top: 10px;}
+	 #busca_rapida .finalidade, .estado, .municipio, .bairro, .tipo, .quartos, .valor, .area, .garagem{width: 100%!important;     max-height: 50px;}
+	 .bairro, .tipo{margin: 2px 2px;}
+	 .butoes {
+		
+	}
+	#busca_rapida {margin-bottom: 100px!important;}
+	#busca_rapida select {
+		width: 270px;}
+	#busca_rapida  .quartos  {
+		
+	}
+	
+	#wp-submit {
+    top: 6px!important;
+    right: 17px!important;
+    padding: 14px!important;
+	}
+	#loginform input[type="text"], #loginform input[type="password"]{height: 40px!important;}
+	#busca_rapida select{position: relative;		top: -45px;}
+	.selectFruFruForm .divCen{width: 198px !important; }
+	.SuperCaixa .superbox{width: 240px!important;}
+	 .senha {
+    float: none!important;;
+    margin-right: 0px!important;
+}
+	 #ok{padding: 7px!important;}
+
+	.inicio p{text-align: center; font-size: 17px;}
+	.rede .col-sm-4{position: relative;		left: 100px; margin-top: 6px; margin-bottom: 6px;}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    De 480px à 767px
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 480px) and (max-width: 767px) {
+    .menu-topo .menu-container{ display: block; }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Até 479px
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (max-width: 479px){
+    .menu-topo .menu-container{ display: block; }
+    .menu-topo li a{ padding: 10px 10px;}
+    .menu-topo li:after{ margin: 0 -5px;}
+	.post_header{ background:none;}
+
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Até 954px
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (max-width: 954px) {
+	.logo{margin-top: 40px; text-align: center;
+	.dotted-1, .dotted-3{background: none;}
+	.textoinicio p {
+		text-align: center;
+		font-size: 15px;
+		margin: 20px 0px;
+	}
+	.inicio .container {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0px;
+	}
+	.sindico {		margin-top: 35px;}
+	.post_header{ background-size:100%;}	
+	.menu-topo{ position: relative;}
+	.menu-topo li a{    display: block;    text-align: left;}	
+	.menu {    padding-top: 50px;    text-align: center;}
+	.navbar-collapse.in {
+		overflow-y: auto;
+		padding: 25px 0px;
+		
+	}
+	.navbar-collapse{border: 0px!important;
+		-webkit-box-shadow: 0px!important;
+		box-shadow: 0px!important;
+		-webkit-overflow-scrolling:0px!important;
+	}
+
+	.area {
+		padding: 0px;
+		background: #fff;
+
+	}
+
+	
+
+	.vc_custom_1599703931823{ margin-left: 0px!important;;}
+
+	.vc_custom_1599744907931 form{    width: 100%!important;
+		float: none!important;
+		padding: 24px!important;
+		background: #fff!important;}
+	.vc_custom_1599704039985{margin-left: 0px!important;}
+
+	.boleto img {
+		margin-left: 0px;
+		padding: 0px;
+	}
+
+	.informacoes span {
+		position: relative;
+		top: 0px;
+		left: 0px;
+	}
+	.informacoes img {
+		margin-bottom: 10px;}
+
+
+	.informacoes {font-size: 17px; padding: 0px;}
+	.iteninf{    margin-bottom: 20px;}
+
+	.vc_custom_1599744907931{width: 95% !important;}
+	.vc_custom_1599744854686{padding: 0px!important; width: 95%!important;}
+
+	.final{ text-align: center;}
+	.final img{ width: auto;}
+
+	.destaque{    margin-bottom: 50px;}
+	.destaque h1{font-weight: bold;     font-size: 20px;}
+
+	.contact img{margin-bottom: 20px;}
+
+	.endereco p{ text-align: center;}
+
+}

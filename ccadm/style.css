@@ -1,0 +1,33 @@
+/*
+Theme Name: Coutinho Carneiro Administradora de Bens
+Theme URI: http://www.ccadministradora.com.br/
+Author: Heloise Moraes
+Author URI: http://www.agagedesign.com.br
+Version: 2020
+*/
+
+
+/* ARQUIVOS FIXO - NÃO ALTERAR CONTEÚDO */
+
+@import url('bootstrap/css/bootstrap.min.css');
+@import url('css/wp.css');
+
+
+
+
+/* FONTES */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('fontes/helvetica-neue-lt-pro-light/styles.css');
+
+
+
+/* ARQUIVOS RELATIVOS AO TEMA */
+@import url('css/global.css');
+@import url('css/main.css');
+@import url('css/responsivo.css');
+

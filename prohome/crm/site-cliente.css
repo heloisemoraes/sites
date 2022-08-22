@@ -1,0 +1,194 @@
+div.ui-dialog {
+    outline: none;
+	z-index: 999999999;
+}
+.janela-site-cliente {
+    width: 250px;
+	height: auto !important;
+	padding-bottom: 20px;
+	border-radius: 10px;
+    background-color: #ededed;    
+	box-shadow: #000 0px 0px 15px 0px;
+	transition-duration: 0.3s;
+}
+.janela-site-cliente .topo-janela {
+    width: 100%;
+    height: 25px;
+}
+.janela-site-cliente .topo-janela h3.titulo-janela {
+    width: 90%;
+	margin: auto;
+    padding-top: 30px;
+    border-bottom: 2px solid #8CBA13;
+    font: 30px titulos;
+	font-weight: 700;    
+    color: #8CBA13 ;
+	text-align: center;
+}
+.janela-site-cliente .topo-janela h3 {
+    margin: 0px;
+    padding: 0px;
+}
+.janela-site-cliente .btn-fechar-janela {
+    cursor: pointer;
+    background: url('fechar_janela.png') no-repeat;
+    width: 25px;
+    height: 25px;
+	position: absolute;
+  	cursor: pointer;
+	margin-top: -77px;
+	right: -12px;
+}
+.janela-site-cliente .btn-ok {
+    cursor: pointer;    
+    margin-left: 5px;
+    /*background: url('btn_ok.png') no-repeat;*/
+    width: 40px;
+    height: 30px;
+    float: left;
+	line-height: 30px;
+	text-align: center;
+	background: #8CBA13;
+	color: #fff;
+	border-radius: 30px;
+	transition-duration: 0.3s;
+}
+.janela-site-cliente .btn-ok:hover{
+	box-shadow: rgba(0,0,0,0.3) 3px 3px 10px 0px;	
+}
+.janela-site-cliente .conteudo-janela {
+    width: 100%;
+    height: 100%;
+    clear: both;
+}
+
+/*** Janela Pergunta ***/
+.janela-e-cliente {
+    width: 340px;
+    height: 180px;
+}
+.janela-e-cliente .pergunta {
+    width: 100%;
+    font: bold 22px Arial;
+    color: #888;
+    text-align: center;
+    display: block;
+	margin-top: 60px;
+}
+.janela-e-cliente .botoes {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    text-align: center;
+    display: table;
+}
+.janela-e-cliente .botoes .btn-sim {
+    margin-right: 40px;
+    width: 75px;
+    height: 45px;
+	line-height: 45px;
+    margin-left: 70px;
+    /*background: url('btn_sim.png') no-repeat;*/
+	background: #8CBA13;
+    cursor: pointer;
+    float: left;
+	color: #fff;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+.janela-e-cliente .botoes .btn-sim:hover{
+	box-shadow: rgba(0,0,0,0.3) 3px 3px 10px 0px;	
+}
+.janela-e-cliente .botoes .btn-nao {
+    margin-right: 40px;
+    width: 75px;
+    height: 45px;
+	line-height: 45px;
+	background: #6B891A;
+    cursor: pointer;
+	color: #fff;
+    float: left;
+	border-radius: 10px;
+	transition-duration: 0.3s;
+}
+.janela-e-cliente .botoes .btn-nao:hover{
+	box-shadow: rgba(0,0,0,0.3) 3px 3px 10px 0px;		
+}
+
+/*** Janela Login ***/
+.janela-login {
+    margin-top: 20px;
+    width: 340px;
+    height: 180px;
+}
+.janela-login form {
+    margin-top: 70px;
+    display: table;
+}
+.janela-login form label {
+    width: 100%;
+    padding: 5px 0px;
+    display: table;
+}
+.janela-login form span {
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin-top: 7px;
+    font: bold 14px Arial;
+    color: #888;
+}
+.janela-login form label input {
+    padding: 3px;
+    border: 1px solid #CCC;
+    float: left;
+    width: 160px;
+	border-radius: 10px;
+	text-indent: 10px;
+}
+.janela-login form label img {
+    margin-left: 20px;
+}
+.janela-login .mensagem-erro {
+    width: 100%;
+    height: 20px;
+    font: 12px Arial;
+    color: #F00;
+    padding: 5px;
+    text-align: center;
+}
+.janela-login .esqueceu-senha {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+.janela-login .esqueceu-senha a {
+    font: bold 10px Arial;
+    color: #777;
+}
+
+/*** Janela do iframe do webform ***/
+.janela-iframe iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/** Formatação do modal **/
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+div.ui-dialog {
+    height: 200px;
+}
+.ui-widget-overlay {
+    background-color: #333;
+    position: fixed;
+	z-index: 99999;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0.4;
+	transition-duration: 0.3s;
+}

@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fullscreen Video Slideshow with BigVideo.js</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bigvideo.css">
+    <script src="js/modernizr-2.5.3.min.js"></script>
+    <!--[if lte IE 8]>
+    <style>
+        /* Rotation of the arrow element for IE < 9 */
+        .next-icon { /* IE Matrix Calculator - http: //www.boogdesign.com/examples/transforms/matrix-calculator.html */;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod='auto expand')";
+            filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678,sizingMethod='auto expand');
+        }
+    </style>
+    <![endif]-->
+    <style>
+
+#slide{
+width: 100%;
+height: 400px;
+overflow: hidden;	
+position: relative;
+}
+
+.wrapper {
+    position: absolute;
+    width: 500%;
+    height: 400px;
+    z-index: 0;
+}
+#big-video-wrap {
+height: 400px;
+}
+	
+/* Video Pages */
+
+.screen {
+    position: relative;
+    height: 400px;
+    width: 20%; /*  NOTE: numVideos/100%  */;
+    float: left;
+    overflow: hidden;
+}
+
+.big-image {
+    min-width: 100%;
+    min-height: 400px;
+    height: 400px;
+    width: auto;
+}
+
+.video-title {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: .5;
+    margin: 40px 0 0 0;
+    padding: 0;
+    line-height: .65;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+/* Nav */
+
+nav#next-btn{
+    position: absolute;
+    right: 20px;
+    top: 320px;
+    padding: 20px;
+    background: #000;
+    border-radius: 40px;
+    opacity: .4;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+nav#next-btn:hover{
+    opacity: 0.6;
+}
+
+.next-icon {
+    display: block;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+	</style>
+</head>
+<body style="margin: 0;">
+
+
+<div id="slide">
+
+    <div class="wrapper">
+        <div class="screen" id="screen-1" data-video="vid/bird.mp4">
+            <img src="img/bird.jpg" class="big-image" />
+            <h1 class="video-title">#1 Bird</h1>
+        </div>
+        <div class="screen" id="screen-2" data-video="vid/satellite.mp4">
+            <img src="img/satellite.jpg" class="big-image" />
+            <h1 class="video-title">#2 Satellite</h1>
+        </div>
+        <div class="screen" id="screen-3" data-video="vid/camera.mp4">
+            <img src="img/camera.jpg" class="big-image" />
+            <h1 class="video-title">#3 Camera</h1>
+        </div>
+    </div>
+
+    <nav id="next-btn">
+        <a href="#" class="next-icon"></a>
+    </nav> 
+
+
+
+    <!-- BigVideo Dependencies -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.8.1.min.js"><\/script>')</script>
+    <script src="js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/video.js"></script>
+
+    <!-- BigVideo -->
+    <script src="js/bigvideo.js"></script>
+
+    <!-- Tutorial Demo -->
+    <script src="js/jquery.transit.min.js"></script>
+    <script>
+        $(function() {
+
+            // Use Modernizr to detect for touch devices, 
+            // which don't support autoplay and may have less bandwidth, 
+            // so just give them the poster images instead
+            var screenIndex = 1,
+                numScreens = $('.screen').length,
+                isTransitioning = false,
+                transitionDur = 1000,
+                BV,
+                videoPlayer,
+                isTouch = Modernizr.touch,
+                $bigImage = $('.big-image'),
+                $window = $(window);
+            
+            if (!isTouch) {
+                // initialize BigVideo
+                BV = new $.BigVideo({forceAutoplay:isTouch});
+                BV.init();
+                showVideo();
+                
+                BV.getPlayer().addEvent('loadeddata', function() {
+                    onVideoLoaded();
+                });
+
+                // adjust image positioning so it lines up with video
+                $bigImage
+                    .css('position','relative')
+                    .imagesLoaded(adjustImagePositioning);
+                // and on window resize
+                $window.on('resize', adjustImagePositioning);
+            }
+            
+            // Next button click goes to next div
+            $('#next-btn').on('click', function(e) {
+				clearInterval(passar_slide);
+                e.preventDefault();
+                if (!isTransitioning) {
+               		next();
+                }
+				passar_slide = setInterval(function(){if (!isTransitioning) {next();}},5000);
+            });            
+			
+			
+
+            function showVideo() {
+                BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
+            }
+
+            function next() {
+                isTransitioning = true;
+                
+                // update video index, reset image opacity if starting over
+                if (screenIndex === numScreens) {
+                    $bigImage.css('opacity',1);
+                    screenIndex = 1;
+                } else {
+                    screenIndex++;
+                }
+                
+                if (!isTouch) {
+                    $('#big-video-wrap').transit({'left':'-100%'},transitionDur)
+                }
+                    
+                (Modernizr.csstransitions)?
+                    $('.wrapper').transit(
+                        {'left':'-'+(100*(screenIndex-1))+'%'},
+                        transitionDur,
+                        onTransitionComplete):
+                    onTransitionComplete();
+            }
+			
+			
+
+            function onVideoLoaded() {
+                $('#screen-'+screenIndex).find('.big-image').transit({'opacity':0},500)
+            }
+
+            function onTransitionComplete() {
+                isTransitioning = false;
+                if (!isTouch) {
+                    $('#big-video-wrap').css('left',0);
+                    showVideo();
+                }
+            }
+
+            function adjustImagePositioning() {
+                $bigImage.each(function(){
+                    var $img = $(this),
+                        img = new Image();
+
+                    img.src = $img.attr('src');
+
+                    var windowWidth = $window.width(),
+                        windowHeight = $window.height(),
+                        r_w = windowHeight / windowWidth,
+                        i_w = img.width,
+                        i_h = img.height,
+                        r_i = i_h / i_w,
+                        new_w, new_h, new_left, new_top;
+
+                    if( r_w > r_i ) {
+                        new_h   = windowHeight;
+                        new_w   = windowHeight / r_i;
+                    }
+                    else {
+                        new_h   = windowWidth * r_i;
+                        new_w   = windowWidth;
+                    }
+
+                    $img.css({
+                        width   : new_w,
+                        height  : new_h,
+                        left    : ( windowWidth - new_w ) / 2,
+                        top     : ( windowHeight - new_h ) / 2
+                    })
+
+                });
+
+            }
+			passar_slide = setInterval(function(){if (!isTransitioning) {next();}},5000);
+        });
+    </script>
+    
+</div> 
+    
+</body>
+</html>

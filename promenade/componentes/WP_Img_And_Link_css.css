@@ -1,0 +1,20 @@
+﻿.exemplo{
+	color: #ccc;
+}
+
+.preview_img img{
+	max-width: 100% !important;
+	max-height: 300px !important;
+}
+
+.button_upload{
+	color: #FFF !important;
+    border-color: #16A768 !important;
+    background: #149C15 !important;
+    box-shadow: inset 0 1px 0 #22D06C,0 1px 0 rgba(0,0,0,.08) !important;
+	width: 100%;
+	height: 40px !important;
+}
+.button_upload:hover{
+    background: #1EB11F !important;
+}

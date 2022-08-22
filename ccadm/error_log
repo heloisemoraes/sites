@@ -1,0 +1,10 @@
+[07-Jul-2016 22:41:26 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/edobabado/public_html/wp-content/themes/edobabado2016/includes/functions.php on line 13
+[03-Aug-2016 07:34:01 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/edobabado/public_html/wp-content/themes/edobabado2016/includes/functions.php on line 13
+[05-Aug-2016 23:17:46 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/edobabado/public_html/wp-content/themes/edobabado2016/includes/functions.php on line 13
+[06-Aug-2016 02:40:55 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/edobabado/public_html/wp-content/themes/edobabado2016/includes/functions.php on line 13
+[07-Aug-2016 22:27:21 UTC] PHP Fatal error:  Call to undefined function bloginfo() in /home/edobabado/public_html/wp-content/themes/edobabado2016/header.php on line 7
+[07-Aug-2016 22:27:22 UTC] PHP Fatal error:  Call to undefined function get_template_part() in /home/edobabado/public_html/wp-content/themes/edobabado2016/footer.php on line 2
+[10-Aug-2016 05:51:20 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/edobabado/public_html/wp-content/themes/edobabado2016/includes/functions.php on line 13
+[10-Aug-2016 23:14:10 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/edobabado/public_html/wp-content/themes/edobabado2016/includes/functions.php on line 13
+[11-Aug-2016 11:37:29 UTC] PHP Fatal error:  Call to undefined function add_filter() in /home/edobabado/public_html/wp-content/themes/edobabado2016/includes/functions.php on line 13
+[14-Sep-2016 00:11:07 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/edobabado/public_html/wp-content/themes/edobabado2016/index.php on line 1

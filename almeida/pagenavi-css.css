@@ -1,0 +1,36 @@
+#footlink{   margin: 20px 0px; text-align: center;}
+
+.wp-pagenavi {
+	  clear: both;
+  text-align: left;
+  color: #4b4b4b;
+  display: inline-block;
+font-family: 'Blooming Elegant Sans'; font-size:30px;
+}
+
+.wp-pagenavi a.nextpostslink{
+color: #4b4b4b;}
+.wp-pagenavi .pages{
+color: #4b4b4b;
+  }
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	padding: 25px;
+	margin: 4px;
+	 font-weight: normal;
+	 color: #4b4b4b;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {}
+
+.wp-pagenavi span.current {
+  color: #fff;
+  font-weight: normal;
+  background: url(imagens/pagi.png) 1px 6px no-repeat!important;
+  padding: 0px 17px 12px;
+}
+
+@media (max-width: 760px){
+	.wp-pagenavi .pages{display: none;}
+}

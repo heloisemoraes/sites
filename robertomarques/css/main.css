@@ -1,0 +1,306 @@
+/* HEADER (cabecalho)
+====================================================================================================== */
+.inicio{    background: #dcdcdd; color: #000;}
+.inicio p{color: #fff;    font-size: 14px; }
+#header{ position:relative; background: #f7f7f8; box-shadow: 0px 6px 22px #d1d1d1;}
+.home #header{box-shadow: 0px 0px 0px #fff;}
+.nav>li>a{    padding: 10px 10px!important;}
+.navbar{margin-top: 30px;}
+.navbar li{ display: inline; padding: 0px; font-size: 15px;}
+.navbar li a{color: #666666; text-transform: uppercase; font-weight: bold;}
+
+.inicio .area{margin-top: 24px;    text-align: right;}
+.inicio .area a{color: #ffffff; font-size: 16px;}
+.tel .fa{}
+
+.fas, .far{font-size: 50px!important;}
+.dropdown{ text-align: right;}
+.dropdown .btn{position: relative; color: #01342d; text-transform: uppercase; font-size: 12px;  padding: 6px 9px; width: 75%;}
+.dropdown-menu.show{width: 100%;}
+.formLoginBase {
+    background: none!important;
+    padding: 0px 10px!important;
+    border: 0px!important;
+}
+::placeholder {
+    font-size: 14px;
+  }
+#submit{ background: #ffc107!important; color: #01342d!important; font-size: 15px;    font-weight: 900;}
+.icondo-login-campos a{color: #000;    font-size: 10px;    text-align: center;}
+.icondo-login-campos{text-align: center;}
+.icondo-login-campos p{margin-bottom: -1rem;}
+
+#user_login, #user_pass{font-size: 10px;}
+
+#user_login input[type="text"].form-control::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+
+#loginform input[type="text"], #loginform input[type="password"]{
+    background: #fefefe;
+    border: 1px solid #c1c1c1;
+    font-size: 14px;
+    color: #01342d;
+    border-radius: 15px;
+    padding: 8px 16px;
+    font-weight: 100;
+    width: 100%;
+}  
+
+.segundavia{ position: relative;   padding: 4px 15px!important;     width: 75%;}
+.segundavia a{color: #01342d; text-transform: uppercase; font-size: 12px;}
+
+.glyphicon{font-size:15px;color:#182d48}
+.glyphicon-map-marker{color: #01a79d;}
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 14px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 14px;
+  }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	MEIO
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#middle{ position:relative;}
+#main{clear: both;}
+.post_header .titulo a{color:#fff;} 
+
+#gallery-1 img {
+    border: 0px!important;
+}
+
+.single-post .postagem{    max-width: 1000px;    margin: 0 auto; padding: 30px;}
+.single-post .titulo{margin: 15px 0px;}
+.single-post{}
+.single-post .titulo a{color: #000; font-size: 2.2em;}
+button, input, select, textarea{border: 1px solid;}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	BUSCA RÁPIDA
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+* {font: 1!important;}
+
+#busca_rapida{
+    position: relative;
+    padding: 4px 15px;
+    color: #7e7f82;
+    display: table;
+    margin: 0 auto;
+    font-size: 14px;
+    width: 84%;
+}
+#busca_rapida .idiomas{
+    display: none;
+}
+#busca_rapida .idiomas img{ 
+    width:21px; 
+    height:13px;
+    cursor:pointer;
+}
+#busca_rapida select{
+    width: 190px;
+    height: 50px;
+    position: absolute;
+    top: 1px;
+    border: 0px;
+    padding: 0px;
+    color: #7e7f82;
+    background: #FFF url(http://agagedesign.com/hilmar/wp-content/plugins/buscarapida//img/buscarapida_bg_right-select.png) right center no-repeat;
+}
+#busca_rapida .multiSelect{
+    width: 100%; 
+    margin: 0px 0;
+}
+#busca_rapida .SuperSelect .flutuante {
+    width: 213px;
+}
+#busca_rapida .superbox input{
+    width: 100px;
+    height: 19px;
+}
+#busca_rapida .deAte input{
+    width: 76px;
+}  
+
+#busca_rapida .finalidade, .estado, .municipio, .bairro, .tipo, .quartos, .valor, .garagem{
+    float:left;
+    margin: 0px 2px;
+    padding: 0px 0px;
+    width: 209px;
+}
+#busca_rapida .bairro, .tipo{background: #fff; position: relative;    top: 2px;}
+#busca_rapida .valor, .area, .garagem{
+    margin:0 10px;
+}
+
+#busca_rapida .quartos{border: 0px;}
+.finalidade{ position:relative;}
+.frufruFormat { position:relative; cursor:pointer; }
+.contfrufru{}
+.selectFruFruForm { cursor:pointer; position: relative;    top: 2px; border: 0px!important; background: #FFF; line-height: 13px; height: 48px;
+    padding: 17px 10px;
+    text-transform: uppercase;}
+.selectFruFruForm div { border:none; height:25px; display:inline-block; position:static; top:0; }
+.selectFruFruForm .divEsq { float:left; width:4px; }
+.selectFruFruForm .divCen { float:left; font-size:14px; overflow: hidden; height: 30px;}
+.selectFruFruForm .divDir { float:left; width:14px; background:url(http://agagedesign.com/hilmar/wp-content/plugins/buscarapida//img/buscarapida_bg_right-select.png) no-repeat 0 0; position: relative; top: -4px; left: 14px; }
+#busca_rapida .finalidade .selectFruFruForm .divDir { float:left; width:14px; margin: -5px 4px; }
+.multiSelect INPUT{    text-transform: uppercase;}
+
+
+.quartos label{display:block;}
+.quartos option{display:block;}
+
+.desabilitado .selectFruFruForm{ border-color:red;} 
+
+.SuperCaixa .superbox {
+
+border: 0px!important;    
+padding: 15px 19px 14px 5px;
+background: #FFF url(http://agagedesign.com/hilmar/wp-content/plugins/buscarapida//img/buscarapida_bg_right-select.png) right center no-repeat;
+width: 190px!important;
+}
+.SuperCaixa .superbox input{color:#7e7f82; font-family: 'Avenir Light'!important;}
+
+.input{border: 1px solid #818181; background: #FFF; color:#333333;}
+
+.areaDeAte .input{width: 57px !important;}
+dt, dd, dl {
+    line-height: 15px;
+    font-size: 14px!important;
+    font-weight: 100!important;
+    margin-bottom: 0rem!important;
+}
+
+.botao-buscar{background: #01342d; top: 6px;
+    right: 1px;
+    position: absolute;
+    padding: 16px!important;} 
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	Destaque
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#destaque_container-widget #destaques-widget{max-width: 1150px!important;}
+
+#destaque_container-widget .item {
+    width: 32%!important;
+    height: 420px!important;
+    background: #fff!important;
+    border: 0px solid #ccc!important;
+    display: block;
+    float: left;
+    position: relative;
+    margin: 0 7px 30px;
+}
+
+#destaque_container-widget .foto img {
+    border: 0px!important;
+    width: 368px!important;
+    height: 295px!important;
+}
+
+#destaque_container-widget .titulo {
+    background: #01a79d!important;
+    color: #fff;
+    width: auto;
+    display: inline!important;
+    height: auto!important;
+    text-transform: uppercase;
+    font-size: 17px!important;
+    padding: 6px 18px!important;
+    margin-top: 0px!important;
+    margin-left: 0px!important;
+    position: absolute;
+    top: 240px;
+    right: 130px;
+}
+
+
+#destaque_container-widget .valorimb{
+    color: #000;
+    font-size: 1.4em;
+    margin: 10px;
+}
+
+#destaque_container-widget .foto{ margin-top: 0px!important; margin-bottom: 10px;}
+#destaque_container-widget .tipo{    font-size: 1.2em;
+    width: 100%;
+    color: #000;
+    margin: 0px 10px;
+    font-weight: 500;
+    margin-bottom: 5px!important;
+    border: 0px!important;
+    background: none;}
+#destaque_container-widget .bairroimb{
+    font-size: 1.1em;
+    width: 100%;
+    color: #01a79d;
+    margin: 0px 10px;
+    font-weight: 400;
+    display: block!important;
+    text-transform: capitalize!important;
+}
+#destaque_container-widget .quarto{
+    font-size: 1.2em;
+    width: 100%;
+    color: #000;
+    margin: 0px 10px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	CONTATO
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea{background: #fefefe;
+    border: 1px solid;
+    margin-bottom: 20px;
+    color: #000;
+    font: 13px 'Roboto', sans-serif;
+margin-top:10px;}
+.wpcf7 p{    margin-bottom: 10px; text-align: left; }
+.wpcf7 textarea{padding: 100px 20px 0px; margin-top: 10px;}
+.formulario{}
+.wpcf7-submit{text-transform: uppercase!important;
+    background: #ffea00!important;
+    color: #000!important;
+    padding: 12px 25px!important;
+    margin-bottom: 30px;
+    font-size: 15px!important;
+	
+}
+::-webkit-input-placeholder {   color: #fff;   font: 24px 'Work Sans', sans-serif;   text-transform:uppercase;   font-weight:500; height:28px; padding-bottom:20px;}
+:-moz-placeholder {   color: #fff;    font: 24px 'Work Sans', sans-serif;	text-transform:uppercase;	font-weight:bold; height:28px; padding-bottom:20px;}
+::-moz-placeholder { color: #fff;    font: 24px 'Work Sans', sans-serif;    text-transform:uppercase;   font-weight:bold; height:28px; padding-bottom:20px; }
+:-ms-input-placeholder {  color: #fff;    font: 24px 'Work Sans', sans-serif;   text-transform:uppercase;   font-weight:bold; height:28px; padding-bottom:20px; }
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	FOOTER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#footer{ clear:both; position:relative; color: #665f5f; background: #dcdcdd;    padding: 20px 0px;}
+#footer h2{    font-size: 22px;    color: #000000;    border-bottom: 4px solid #ffcc00;     line-height: 30px; margin-bottom: 20px;}
+#footer p{text-align: center;}
+#footer li a{color: #000000;}
+.copy{ background: #182d48;    color: #fff;}
+   
+.copy p{text-align: center;}
+.copy p a{ color: #fff; }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  BACK TO TOP
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+#back-top { bottom: 15px; position: fixed; right: 15px; }
+#back-top a { display: block; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }

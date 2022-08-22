@@ -1,0 +1,1 @@
+[25-Apr-2017 10:16:26 America/Sao_Paulo] PHP Fatal error:  Call to undefined function add_action() in /home/prohome/public_html/wp-content/themes/multipurpose/modules/colorbox/colorbox.php on line 28
